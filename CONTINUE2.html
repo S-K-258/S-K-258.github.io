@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+    <style>
+        body {background-color: black; }
+        h1   {color: Lime;font-size: 80px}
+        p    {color: Lime;}
+        .special-text {
+               color: red;
+               font-size: 50px;
+               position: relative;
+               top: 30px;
+           }
+        .strikethrough {
+               text-decoration: line-through;
+           }
+         .button-container {
+               position: relative;
+               height: 20vh; 
+           }
+         .move-button {
+               position: absolute;
+               bottom: 20px; 
+               right: 20px;
+           }
+         .center-text {
+        text-align: center;
+           }
+        .button {
+        display: block;
+        margin: 0 auto;
+           }
+        .centered-button {
+        display: block; 
+        margin: 100px auto 0; 
+        text-align: center; 
+        font-size: 100px;
+        background-color: lime;
+    }   
+</style>
+
+<pre><h1 style="font-size: medium;text-align: center; background-color: red;">                                                                                                                                                                                                 
+                                                                                                                                                                                                 
+                                                                                                                                                                                                   
+                                                                                                                                                                                                
+  ,----..                                                                         .--.--.                        ____                    ,--,                      ___                          
+  /   /   \                              ,---,                                    /  /    '.    ,--,            ,'  , `.                ,--.'|                    ,--.'|_                        
+ |   :     :    ,---.            .---. ,---.'|       ,---.                       |  :  /`. /  ,--.'|         ,-+-,.' _ |          ,--,  |  | :                    |  | :,'     ,---.     __  ,-. 
+ .   |  ;. /   '   ,'\          /. ./| |   | :      '   ,'\                      ;  |  |--`   |  |,       ,-+-. ;   , ||        ,'_ /|  :  : '                    :  : ' :    '   ,'\  ,' ,'/ /| 
+ .   ; /--`   /   /   |      .-'-. ' | :   : :     /   /   |       .--,          |  :  ;_     `--'_      ,--.'|'   |  ||   .--. |  | :  |  ' |       ,--.--.    .;__,'  /    /   /   | '  | |' | 
+ ;   | ;     .   ; ,. :     /___/ \: | :     |,-. .   ; ,. :     /_ ./|           \  \    `.  ,' ,'|    |   |  ,', |  |, ,'_ /| :  . |  '  | |      /       \   |  |   |    .   ; ,. : |  |   ,' 
+ |   : |     '   | |: :  .-'.. '   ' . |   : '  | '   | |: :  , ' , ' :            `----.   \ '  | |    |   | /  | |--'  |  ' | |  . .  |  | :     .--.  .-. |  :__,'| :    '   | |: : '  :  /   
+ .   | '___  '   | .; : /___/ \:     ' |   |  / : '   | .; : /___/ \: |            __ \  \  | |  | :    |   : |  | ,     |  | ' |  | |  '  : |__    \__\/: . .    '  : |__  '   | .; : |  | '    
+ '   ; : .'| |   :    | .   \  ' .\    '   : |: | |   :    |  .  \  ' |           /  /`--'  / '  : |__  |   : |  |/      :  | : ;  ; |  |  | '.'|   ," .--.; |    |  | '.'| |   :    | ;  : |    
+ '   | '/  :  \   \  /   \   \   ' \ | |   | '/ :  \   \  /    \  ;   :          '--'.     /  |  | '.'| |   | |`-'       '  :  `--'   \ ;  :    ;  /  /  ,.  |    ;  :    ;  \   \  /  |  , ;    
+ |   :    /    `----'     \   \  |--"  |   :    |   `----'      \  \  ;            `--'---'   ;  :    ; |   ;/           :  ,      .-./ |  ,   /  ;  :   .'   \   |  ,   /    `----'    ---'     
+  \   \ .'                 \   \ |     /    \  /                 :  \  \                      |  ,   /  '---'             `--`----'      ---`-'   |  ,     .-./    ---`-'                        
+   `---`                    '---"      `-'----'                   \  ' ;                       ---`-'                                              `--`---'                                      
+                                                                   `--`                                                                                                                           </h1></pre>
+
+
+ <p style="text-align: center; font-size: 50px;">Aha! You found this, click the start button to continue!!!</p>
+
+    <a href="CO3.html"><button id="playButton"; class="centered-button">
+    start</button>
+
+    <audio id="music" autoplay loop>
+        <source src="audio/mpeg/cowboy1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        var playButton = document.getElementById('playButton');
+        var music = document.getElementById('music');
+
+        playButton.addEventListener('click', function() {
+            if (music.paused) {
+                music.play();
+                sessionStorage.setItem('musicPlaying', 'true');
+            } else {
+                music.pause();
+                sessionStorage.setItem('musicPlaying', 'false');
+            }
+        });
+
+        window.addEventListener('beforeunload', function() {
+            sessionStorage.setItem('musicPlaying', music.paused ? 'false' : 'true');
+        });
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>
