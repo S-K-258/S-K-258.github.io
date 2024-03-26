@@ -1,41 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>SECRET BASE</title>
+  <title>SECRET BASE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <style>
-        body {background-color: black; text-align: center;}
-        h1   {color: Lime;font-size: 50px; border:5px solid }
-        p    {color: Lime;border:5px solid red}
-
-    </style>
-
-<pre><h1 style="font-size: medium;text-align: center;border: 10px solid red; font-size: 13px;">
-                                                                                                                                                            
+  <style>
+ body {background-color: black; text-align: center;}
+ h1   {color: lime; border: 5px; font-size: 35px;}
+ h2   {border: 5px solid lime;}
+ p    {color: lime; border:5px solid lime}
+.navbar-custom {background-color: rgb(155, 155, 155);border: 5px solid lime; /* 修改导航栏背景色 */}
+.navbar-custom .navbar-nav .nav-link {color: red; /* 修改导航链接的颜色 */ }
+.navbar-custom .navbar-nav .nav-link:hover {color: lime; /* 修改导航链接的鼠标悬停颜色 */}
+  </style>
+<div class="container-fluid" style="border: 10px solid red " >
+  <pre><h1 style="font-size: 10px;">
     #    # ###### #       ####   ####  #    # ######    #####  ####     #    # #   #     ####  ######  ####  #####  ###### #####    #####    ##    ####  ###### 
     #    # #      #      #    # #    # ##  ## #           #   #    #    ##  ##  # #     #      #      #    # #    # #        #      #    #  #  #  #      #      
     #    # #####  #      #      #    # # ## # #####       #   #    #    # ## #   #       ####  #####  #      #    # #####    #      #####  #    #  ####  #####  
     # ## # #      #      #      #    # #    # #           #   #    #    #    #   #           # #      #      #####  #        #      #    # ######      # #      
     ##  ## #      #      #    # #    # #    # #           #   #    #    #    #   #      #    # #      #    # #   #  #        #      #    # #    # #    # #      
     #    # ###### ######  ####   ####  #    # ######      #    ####     #    #   #       ####  ######  ####  #    # ######   #      #####  #    #  ####  ###### 
- </h1></pre>
+</h1></pre></div>
 
-<p style="font-size: medium;text-align: center; color: aliceblue; font-size: 20px; text-decoration: underline;border: 5px solid ; font-size: 24px;">
+<br>
+
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="glitch.html">Glitch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="MemeMashup.html">MemeMashup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="MincraftArt.html">Mincraft Art</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="3dprint.html">3d print</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="netart/index.html" target="_blank">Net art</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<br>
+
+<div class="container">
+  <p style="font-size: medium;text-align: center; color: aliceblue; font-size: 20px; text-decoration: underline;border: 5px solid ; font-size: 24px;">
     About this page: This page shows some of my personal work, so don't ask who "Im" is.<br>*click on the image to see more details
- </p>
+ </p></div>
 
-  <h1>
-     Glitch work:
-    </h1>
-    <a href="glitch.html"><p><img src="img/work/untitled233.jpg" alt="233">
-    </p></a>
+ <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Portfolio Item 1 -->
+    <div class="col">
+      <div class="card h-100" style="border: 5px solid red; background-color: black;">
+        <a href="glitch.html"><img src="img/work/untitled233.jpg" class="card-img-top" alt="glitch"></a>
+        <div class="card-body">
+          <h2 class="card-title" style=" color: lime;">Glitch</h2>
+        </div>
+      </div>
+    </div>
 
-    <h1>
-        Meme Mashup:
-       </h1>
-       <a href="MemeMashup.html"><p><img src="img/work/meme/WORK.png" alt="meme">
-       </p></a>
+     <!-- Portfolio Item 2 -->
+     <div class="col">
+        <div class="card h-100" style="border: 5px solid red; background-color: black;">
+          <a href="MemeMashup.html"><img src="img/work/meme/WORK.png" class="card-img-top" alt="meme"></a>
+          <div class="card-body">
+            <h2 class="card-title" style=" color: lime;">MemeMashup</h2>
+          </div>
+        </div>
+      </div>
+
+     <!-- Portfolio Item 3 -->
+      <div class="col">
+        <div class="card h-100" style="border: 5px solid red; background-color: black;">
+          <a href="MincraftArt.html"><img src="img/work/mincraft/2024-03-02_13.30.50.png" class="card-img-top" alt="Mincraft"></a>
+          <div class="card-body">
+            <h2 class="card-title" style=" color: lime;">Mincraft Art</h2>
+          </div>
+        </div>
+      </div>
+
+    <!-- Portfolio Item 4 -->
+       <div class="col">
+        <div class="card h-100" style="border: 5px solid red; background-color: black;">
+          <a href="3dprint.html"><img src="img/work/3dprint/1.jpg" class="card-img-top" alt="Mincraft"></a>
+          <div class="card-body">
+            <h2 class="card-title" style=" color: lime;">3d print</h2>
+          </div>
+        </div>
+      </div>
+
+    <!-- Portfolio Item 5 -->
+      <div class="col">
+        <div class="card h-100" style="border: 5px solid red; background-color: black;">
+          <a href="netart/index.html" target="_blank"><img src="img/work/netart/1.png" class="card-img-top" alt="netart" ></a>
+          <div class="card-body">
+            <h2 class="card-title" style=" color: lime;">Netart</h2>
+          </div>
+        </div>
+      </div>
+</div>
 
 </body>
 </html>
