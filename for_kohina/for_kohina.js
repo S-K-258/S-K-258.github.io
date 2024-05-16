@@ -55,9 +55,10 @@ function setup() {
 }
 
 
-// fix a bug (plz don't care about this)
+// Fix a bug (plz don't care about this)
 normalMode = true;
 
+// About resetscore
 function resetScore() {
   score = 0;
 }
