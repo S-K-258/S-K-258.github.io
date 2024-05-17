@@ -203,13 +203,14 @@ function applyCustomSettings() {
   if (!isNaN(customSize)) {
     ball.size = customSize;
     localStorage.setItem('customSize', customSize);
+  } else {
+    size = round(random(20, 50));
   }
   
   if (!isNaN(customSpeed)) {
     speed = customSpeed;
     localStorage.setItem('customSpeed', customSpeed);
   } else {
-    // If only one parameter is entered, keep the other parameters random
     speed = random(1, 10);
   }
   
@@ -217,7 +218,6 @@ function applyCustomSettings() {
     health = customHealth;
     localStorage.setItem('customHealth', customHealth);
   } else {
-    // If only one parameter is entered, keep the other parameters random
     health = round(random(25, 1000));
   }
 }
