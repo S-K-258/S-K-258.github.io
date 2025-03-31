@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background Music</title>
+</head>
+<body>
+  <audio id="background-music" loop autoplay>
+    <source src="audio/cowboy1.mp3" type="audio/mp3">
+</audio>
+<script>
+    window.onload = function() {
+        var music = document.getElementById("background-music");
+        music.volume = 0.3;
+        if (!localStorage.getItem("musicPlayed")) {
+            music.play();
+            localStorage.setItem("musicPlayed", "true");
+        }
+    };
+</script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Cowboy simulator</title>
 </head>
 <body>
     <style>
@@ -42,6 +42,8 @@
     }   
 </style>
 
+<iframe id="bg-music" src="audio.html" style="display:none;"></iframe>
+
 <pre><h1 style="font-size: medium;text-align: center; background-color: red;">                                                                                                                                                                                                 
                                                                                                                                                                                                  
                                                                                                                                                                                                    
@@ -68,29 +70,6 @@
     <a href="CO3.html"><button id="playButton"; class="centered-button">
     start</button>
 
-    <audio id="music" autoplay loop>
-        <source src="audio/cowboy1.mp3" type="audio">
-        Your browser does not support the audio element.
-    </audio>
-
-    <script>
-        var playButton = document.getElementById('playButton');
-        var music = document.getElementById('music');
-
-        playButton.addEventListener('click', function() {
-            if (music.paused) {
-                music.play();
-                sessionStorage.setItem('musicPlaying', 'true');
-            } else {
-                music.pause();
-                sessionStorage.setItem('musicPlaying', 'false');
-            }
-        });
-
-        window.addEventListener('beforeunload', function() {
-            sessionStorage.setItem('musicPlaying', music.paused ? 'false' : 'true');
-        });
-    </script>
 
 </p></pre>
 </body>

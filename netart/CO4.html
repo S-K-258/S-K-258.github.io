@@ -19,20 +19,8 @@
            }
 </style>
 
-    <audio id="music" autoplay loop>
-        <source src="audio/cowboy1.mp3" type="audio">
-        Your browser does not support the audio element.
-    </audio>
+<iframe id="bg-music" src="audio.html" style="display:none;"></iframe>
 
-    <script>
-        window.addEventListener('load', function() {
-            var isMusicPlaying = sessionStorage.getItem('musicPlaying');
-            if (isMusicPlaying === 'true') {
-                var music = document.getElementById('music');
-                music.play();
-            }
-        });
-    </script>
 
     <div class="center-text"><pre><p style="font-size: 5px;">
 
